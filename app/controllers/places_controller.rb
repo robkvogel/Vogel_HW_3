@@ -21,13 +21,13 @@ class PlacesController < ApplicationController
   def create
     #create a new place
     @place = Place.new
-    @place.name = params["name"]
+    @place["name"] = params["name"]
 
     #save place
     @place.save
 
     #send them back
-    redirect_to /places
+    redirect_to "/places"
   end
 
 end
