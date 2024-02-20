@@ -1,6 +1,6 @@
 <!-- Company details page -->
 
-<h1><%= @place["name"] %></h1>
+<h1><%= @place["name"] %> </h1>
 
 <h3>Entries</h3>
 
@@ -13,6 +13,9 @@
     </li>
   <% end %>
 </ul>
+
+
+<p><a href="/entries/new?place_id=<%= @place['id'] %>">Add New Entry</a></p>
 
 
 <!-- Link back to all places -->
