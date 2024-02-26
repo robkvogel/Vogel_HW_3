@@ -20,10 +20,8 @@
   </p>
 
   <!-- Transfer state from the previous action to the next -->
-  <p>
-    <label for="place_id">Place</label>
-    <input type="hidden" name="entry[place_id]" value="<%= @place_id %>" id="entry_place_id" >
-  </p>
+
+    <input type="hidden" name="place_id" value="<%= @place["id"] %>" >
 
 
   <button>Submit</button>

@@ -19,6 +19,7 @@ def create
   @entry["title"] = params["title"]
   @entry["description"] = params["description"]
   @entry["posted_on"] = params["posted_on"]
+  @entry["place_id"] = params["place_id"]
  
 
   @entry.save

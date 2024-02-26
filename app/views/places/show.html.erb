@@ -7,15 +7,15 @@
 <ul>
   <% for entry in @entries %>
     <li>
-      <a href="/entry/<%= entry["id"] %>">
-        <%= entry["title"] %>
-        </a>
-         <%= entry["posted_on"] %>, <%= entry["description"] %>
+         <h2>  <%= entry["title"] %> </h2>
+         <h3> <%= entry["description"] %> </h3>
+          <p> <%= entry["posted_on"] %> </p>
       
     </li>
   <% end %>
 </ul>
 
+<br> 
 
 <p><a href="/entries/new?place_id=<%= @place['id'] %>">Add New Entry</a></p>
 
