@@ -9,7 +9,8 @@ end
 
 def new
 @entry = Entry.new
-#@place = Place.find_by({"id" => params["place_id"]})
+@place = Place.find_by({"id" => params["place_id"]})
+@place_id = params["place_id"]
 
 end
 

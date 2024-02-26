@@ -8,8 +8,10 @@
   <% for entry in @entries %>
     <li>
       <a href="/entry/<%= entry["id"] %>">
-        <%= entry["last_name"] %>, <%= contact["first_name"] %>
-      </a>
+        <%= entry["title"] %>
+        </a>
+         <%= entry["posted_on"] %>, <%= entry["description"] %>
+      
     </li>
   <% end %>
 </ul>
